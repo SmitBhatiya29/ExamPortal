@@ -42,7 +42,7 @@ const StudentDashboard = ({ onLogout }) => {
     if (!token) {
       onLogout(); return;
     }
-    axios.get('http://localhost:5000/api/students/profile', {
+    axios.get('https://examportal-2-70wh.onrender.com/api/students/profile', {
       headers: { 'Authorization': `Bearer ${token}` }
     })
       .then(response => {
@@ -69,7 +69,7 @@ const StudentDashboard = ({ onLogout }) => {
     const token = localStorage.getItem('token');
     const sid = studentId || localStorage.getItem('studentId');
     if (!token || !sid) return;
-    axios.get(`http://localhost:5000/api/quiz-results/student/${sid}`)
+    axios.get(`https://examportal-2-70wh.onrender.com/api/quiz-results/student/${sid}`)
       .then(res => {
         const { results } = res.data || { results: [] };
         setResultsData(Array.isArray(results) ? results : []);
@@ -83,7 +83,7 @@ const StudentDashboard = ({ onLogout }) => {
   useEffect(() => {
     const sid = studentId || localStorage.getItem('studentId');
     if (!sid) return;
-    axios.get(`http://localhost:5000/api/quiz-results/student/${sid}/chapter-summary`)
+    axios.get(`https://examportal-2-70wh.onrender.com/api/quiz-results/student/${sid}/chapter-summary`)
       .then(res => {
         setChapterSummary(res.data);
       })

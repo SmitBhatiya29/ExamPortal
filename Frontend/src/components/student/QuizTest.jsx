@@ -163,7 +163,7 @@ const QuizTest = ({ testData, onEndTest }) => {
       console.log("🚀 Submitting Payload >>>", JSON.stringify(payload, null, 2));
 
       const response = await axios.post(
-        'http://localhost:5000/api/quiz-results/submit',
+        'https://examportal-2-70wh.onrender.com/api/quiz-results/submit',
         payload,
         {
           headers: {

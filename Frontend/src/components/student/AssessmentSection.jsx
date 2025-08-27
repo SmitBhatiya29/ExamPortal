@@ -16,7 +16,7 @@ const AssessmentSection = () => {
           return;
         }
 
-        const res = await axios.get('http://localhost:5000/api/quizzes/student-quizzes', {
+        const res = await axios.get('https://examportal-2-70wh.onrender.com/api/quizzes/student-quizzes', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

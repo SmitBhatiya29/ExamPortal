@@ -22,7 +22,7 @@ const Login = ({ onLogin }) => {
 
       if (isRegistering && selectedType === 'teacher') {
         // Teacher registration
-        response = await axios.post('http://localhost:5000/api/teachers/signup', {
+        response = await axios.post('https://examportal-2-70wh.onrender.com/api/teachers/signup', {
           name,
           email,
           institute,
@@ -36,13 +36,13 @@ const Login = ({ onLogin }) => {
         });
       } else if (selectedType === 'teacher') {
         // Teacher login
-        response = await axios.post('http://localhost:5000/api/teachers/login', {
+        response = await axios.post('https://examportal-2-70wh.onrender.com/api/teachers/login', {
           email,
           password
         });
       } else if (selectedType === 'student') {
         // Student login
-        response = await axios.post('http://localhost:5000/api/students/login', {
+        response = await axios.post('https://examportal-2-70wh.onrender.com/api/students/login', {
           email,
           password
         });

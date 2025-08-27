@@ -35,7 +35,7 @@ const ResultSection = () => {
           return;
         }
 
-        const res = await axios.get(`http://localhost:5000/api/quiz-results/student/${studentId}`);
+        const res = await axios.get(`https://examportal-2-70wh.onrender.com/api/quiz-results/student/${studentId}`);
         const rows = res.data?.results || [];
 
         // Group by subject -> tests

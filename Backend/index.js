@@ -27,7 +27,7 @@ mongoose.connect(MONGO_URI)
 
 // CORS setup
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://examportal-2-70wh.onrender.com',
   credentials: true
 }));
 
