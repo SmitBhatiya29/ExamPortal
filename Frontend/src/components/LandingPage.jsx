@@ -1,12 +1,4 @@
 import React, { useState } from 'react';
-import studentImage from './photos/Student_Endroll.jpg';
-import Default_Test from './photos/Default_Test.png';
-import Test from './photos/test.png';
-import Medha from './photos/Medha.jpg';
-import amee from './photos/amee.jpg';
-import anju from './photos/anju.jpg';
-import smit from './photos/smit3.jpg';
-import Dashboard from './photos/Dashboard.png';
 import { 
   BookOpen, 
   Users, 
@@ -31,54 +23,54 @@ const LandingPage = ({ onLogin }) => {
       icon: Users,
       title: "Student Enrollment",
       description: "Teachers can easily enroll and manage their students, creating organized classroom environments for effective learning.", 
-       image: studentImage  
-       },
+      image: "/photos/Student_Endroll.jpg"  
+    },
     {
       icon: BookOpen,
       title: "Smart Quiz Creation",
       description: "Create customized quizzes with chapter-wise questions and difficulty levels to match your curriculum requirements.",
-      image: Default_Test
+      image: "/photos/Default_Test.png"
     },
     {
       icon: Award,
       title: "Student Quiz Attempts",
       description: "Students can attempt quizzes in a user-friendly interface with real-time progress tracking and immediate feedback.",
-      image: Test
+      image: "/photos/test.png"
     },
     {
       icon: PieChart,
       title: "Performance Analytics",
       description: "Comprehensive dashboards provide detailed insights into student performance, identifying strengths and areas for improvement.",
-      image: Dashboard
+      image: "/photos/Dashboard.png"
     }
   ];
 
-const teamMembers = [
-  {
-    name: "Smit Bhatiya",
-    role: "Full Stack Developer (Project Leader)",
-    description: "Led the project, integrated frontend and backend systems",
-    image: smit
-  },
-  {
-    name: "Anju Swami",
-    role: "Backend Developer & Database Designer",
-    description: "Designed database architecture and developed backend APIs",
-    image: anju
-  },
-  {
-    name: "Medha Raina",
-    role: "Frontend Developer",
-    description: "Implemented responsive and interactive frontend features",
-    image: Medha
-  },
-  {
-    name: "Amee Panchal",
-    role: "UI/UX Designer",
-    description: "Created intuitive user experience and visual designs",
-    image: amee
-  }
-];
+  const teamMembers = [
+    {
+      name: "Smit Bhatiya",
+      role: "Full Stack Developer (Project Leader)",
+      description: "Led the project, integrated frontend and backend systems",
+      image: "/photos/smit3.jpg"
+    },
+    {
+      name: "Anju Swami",
+      role: "Backend Developer & Database Designer",
+      description: "Designed database architecture and developed backend APIs",
+      image: "/photos/anju.jpg"
+    },
+    {
+      name: "Medha Raina",
+      role: "Frontend Developer",
+      description: "Implemented responsive and interactive frontend features",
+      image: "/photos/Medha.jpg"
+    },
+    {
+      name: "Amee Panchal",
+      role: "UI/UX Designer",
+      description: "Created intuitive user experience and visual designs",
+      image: "/photos/amee.jpg"
+    }
+  ];
 
 
   if (showLogin) {
