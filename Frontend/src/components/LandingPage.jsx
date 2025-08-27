@@ -70,7 +70,7 @@ const teamMembers = [
     name: "Medha Raina",
     role: "Frontend Developer",
     description: "Implemented responsive and interactive frontend features",
-    image: Medha,
+    image: Medha
   },
   {
     name: "Amee Panchal",
