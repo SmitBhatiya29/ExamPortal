@@ -71,6 +71,7 @@ const LandingPage = ({ onLogin }) => {
       image: "/photos/amee.jpg"
     }
   ];
+  
 
 
   if (showLogin) {
