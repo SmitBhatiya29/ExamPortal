@@ -82,7 +82,7 @@ export default function TeacherAnalytics() {
       setLoading(true);
       setError('');
       try {
-        const res = await axios.get('https://examportal-2-70wh.onrender.com/api/teachers/analytics/overview', {
+        const res = await axios.get('https://examportal-3-tf7a.onrender.com//api/teachers/analytics/overview', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           },

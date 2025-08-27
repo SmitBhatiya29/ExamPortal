@@ -81,7 +81,7 @@ const TestPlannerSection = () => {
           return;
         }
         // Primary: assigned quizzes
-        const res = await axios.get('https://examportal-2-70wh.onrender.com/api/students/quizzes', {
+        const res = await axios.get('https://examportal-3-tf7a.onrender.com//api/students/quizzes', {
           headers: { Authorization: `Bearer ${token}` },
         });
         let arr = res.data?.quizzes || res.data || [];
@@ -89,7 +89,7 @@ const TestPlannerSection = () => {
 
         // Fallback: quizzes created by student's teacher (if assigned list empty)
         if (arr.length === 0) {
-          const res2 = await axios.get('https://examportal-2-70wh.onrender.com/api/students/quizzes/by-teacher', {
+          const res2 = await axios.get('https://examportal-3-tf7a.onrender.com//api/students/quizzes/by-teacher', {
             headers: { Authorization: `Bearer ${token}` },
           });
           const arr2 = res2.data?.quizzes || res2.data || [];

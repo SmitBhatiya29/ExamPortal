@@ -22,7 +22,7 @@
           return;
         }
 
-        const res = await axios.get('https://examportal-2-70wh.onrender.com/api/teachers/profile', {
+        const res = await axios.get('https://examportal-3-tf7a.onrender.com//api/teachers/profile', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -67,7 +67,7 @@
   }
 
   try {
-    const response = await axios.put('https://examportal-2-70wh.onrender.com/api/teachers/profile', {
+    const response = await axios.put('https://examportal-3-tf7a.onrender.com//api/teachers/profile', {
       name: formData.name,
       email: formData.email,
       institute: formData.institute,

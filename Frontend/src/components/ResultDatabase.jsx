@@ -25,7 +25,7 @@ const ResultDatabase = () => {
     const teacherId = localStorage.getItem("teacherId");
 
     try {
-      const res = await axios.get(`https://examportal-2-70wh.onrender.com/api/teachers/students/${teacherId}`, {
+      const res = await axios.get(`https://examportal-3-tf7a.onrender.com//api/teachers/students/${teacherId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -68,7 +68,7 @@ const ResultDatabase = () => {
   const teacherId = localStorage.getItem("teacherId");
 
   try {
-    const res = await axios.get(`https://examportal-2-70wh.onrender.com/api/teachers/students/${teacherId}`, {
+    const res = await axios.get(`https://examportal-3-tf7a.onrender.com//api/teachers/students/${teacherId}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -154,7 +154,7 @@ const ResultDatabase = () => {
     };
 
     try {
-      const response = await fetch('https://examportal-2-70wh.onrender.com/api/students/signup', {
+      const response = await fetch('https://examportal-3-tf7a.onrender.com//api/students/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -183,7 +183,7 @@ const ResultDatabase = () => {
 
   const deleteDatabase = async (id) => {
     try {
-      const response = await fetch('https://examportal-2-70wh.onrender.com/api/students/delete-by-database-teacher', {
+      const response = await fetch('https://examportal-3-tf7a.onrender.com//api/students/delete-by-database-teacher', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

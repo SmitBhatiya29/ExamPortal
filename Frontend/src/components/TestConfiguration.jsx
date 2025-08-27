@@ -49,7 +49,7 @@ const handleCreate = async (questions) => {
 
   try {
     const response = await axios.post(
-      'https://examportal-2-70wh.onrender.com/api/quizzes',
+      'https://examportal-3-tf7a.onrender.com/api/quizzes',
       finalTestData,
       {
         headers: {

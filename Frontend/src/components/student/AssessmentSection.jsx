@@ -16,7 +16,7 @@ const AssessmentSection = () => {
           return;
         }
 
-        const res = await axios.get('https://examportal-2-70wh.onrender.com/api/quizzes/student-quizzes', {
+        const res = await axios.get('https://examportal-3-tf7a.onrender.com//api/quizzes/student-quizzes', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

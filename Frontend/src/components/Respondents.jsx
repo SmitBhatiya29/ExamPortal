@@ -27,7 +27,7 @@ const Respondents = ({ teacherId: propTeacherId }) => {
         console.log("📡 Fetching responses for teacherId:", teacherId);
 
         const res = await axios.get(
-          `https://examportal-2-70wh.onrender.com/api/teacher-responses/${teacherId}`
+          `https://examportal-3-tf7a.onrender.com//api/teacher-responses/${teacherId}`
         );
 
         console.log("✅ API Response:", res.data); // <-- Debug log

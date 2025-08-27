@@ -19,7 +19,7 @@ const TeacherDashboard = ({ onLogout }) => {
   useEffect(() => {
     const fetchQuizzes = async () => {
       try {
-        const response = await axios.get('https://examportal-2-70wh.onrender.com/api/quizzes/my-quizzes', {
+        const response = await axios.get('https://examportal-3-tf7a.onrender.com/api/quizzes/my-quizzes', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
@@ -40,7 +40,7 @@ const TeacherDashboard = ({ onLogout }) => {
 
   const handleDeleteQuiz = async (quizId) => {
     try {
-      const res = await axios.delete(`https://examportal-2-70wh.onrender.com/api/quizzes/${quizId}`, {
+      const res = await axios.delete(`https://examportal-3-tf7a.onrender.com/api/quizzes/${quizId}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
