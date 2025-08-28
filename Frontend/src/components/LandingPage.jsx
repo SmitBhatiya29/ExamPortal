@@ -48,32 +48,12 @@ const LandingPage = ({ onLogin }) => {
   const teamMembers = [
     {
       name: "Smit Bhatiya",
-      role: "Full Stack Developer (Project Leader)",
+      role: "Full Stack Developer",
       description: "Led the project, integrated frontend and backend systems",
       image: "/photos/smit3.jpg"
-    },
-    {
-      name: "Anju Swami",
-      role: "Backend Developer & Database Designer",
-      description: "Designed database architecture and developed backend APIs",
-      image: "/photos/anju.jpg"
-    },
-    {
-      name: "Medha Raina",
-      role: "Frontend Developer",
-      description: "Implemented responsive and interactive frontend features",
-      image: "/photos/Medha.jpg"
-    },
-    {
-      name: "Amee Panchal",
-      role: "UI/UX Designer",
-      description: "Created intuitive user experience and visual designs",
-      image: "/photos/amee.jpg"
     }
   ];
   
-
-
   if (showLogin) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4 animate-fade-in">
@@ -92,13 +72,6 @@ const LandingPage = ({ onLogin }) => {
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
-      </div>
-
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm transition-all duration-300 animate-slide-down">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,9 +95,6 @@ const LandingPage = ({ onLogin }) => {
 
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
-        {/* Parallax Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 via-transparent to-purple-100/20 animate-pulse-slow"></div>
-        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in-up">
@@ -150,11 +120,6 @@ const LandingPage = ({ onLogin }) => {
             </div>
           </div>
         </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute top-1/4 left-10 w-4 h-4 bg-blue-400 rounded-full animate-float"></div>
-        <div className="absolute top-1/3 right-20 w-6 h-6 bg-purple-400 rounded-full animate-float animation-delay-1000"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-3 h-3 bg-pink-400 rounded-full animate-float animation-delay-2000"></div>
       </section>
 
       {/* Features Section */}
@@ -203,81 +168,42 @@ const LandingPage = ({ onLogin }) => {
         </div>
       </section>
 
-      {/* Visual Analytics Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 relative overflow-hidden">
-        {/* Animated Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-400 to-purple-400 animate-gradient-x"></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">Visual Analytics & Insights</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up animation-delay-200">
-              Identify weak and strong areas with comprehensive visual analytics that help both students and teachers make data-driven decisions
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 animate-fade-in-up animation-delay-400 hover:shadow-3xl transition-all duration-500 group">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="transform transition-all duration-500 group-hover:translate-x-2">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 transition-colors duration-300 group-hover:text-blue-600">Performance Dashboard</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-center gap-3 animate-slide-in-left animation-delay-600">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                    <span className="text-gray-700">Chapter-wise performance tracking</span>
-                  </li>
-                  <li className="flex items-center gap-3 animate-slide-in-left animation-delay-800">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse animation-delay-200"></div>
-                    <span className="text-gray-700">Difficulty-based analysis</span>
-                  </li>
-                  <li className="flex items-center gap-3 animate-slide-in-left animation-delay-1000">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse animation-delay-400"></div>
-                    <span className="text-gray-700">Improvement recommendations</span>
-                  </li>
-                  <li className="flex items-center gap-3 animate-slide-in-left animation-delay-1200">
-                    <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse animation-delay-600"></div>
-                    <span className="text-gray-700">Class-wide performance insights</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="transform transition-all duration-500 group-hover:-translate-x-2">
-                <img
-                  src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Analytics Dashboard"
-                  className="w-full h-64 object-cover rounded-xl shadow-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-rotate-1"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Meet the Team */}
+      {/* Developed By Section */}
       <section className="py-20 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">Meet Our Team</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">Developed By</h2>
             <p className="text-xl text-gray-600 animate-fade-in-up animation-delay-200">
-              The passionate developers behind QuizMaster
+              The passionate developer behind QuizMaster
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 text-center border border-gray-100 group hover:-translate-y-2 animate-fade-in-up"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 flex items-center gap-6 border border-gray-100 group hover:-translate-y-2 animate-fade-in-up w-full md:w-2/3"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
+                {/* Image */}
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+                  className="w-28 h-28 rounded-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
                 />
-                <h3 className="text-xl font-bold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-600">{member.name}</h3>
-                <p className="text-blue-600 font-semibold mb-3 transition-colors duration-300 group-hover:text-purple-600">{member.role}</p>
-                <p className="text-gray-600 text-sm transition-colors duration-300 group-hover:text-gray-700">{member.description}</p>
+
+                {/* Info */}
+                <div className="text-left">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-600">
+                    {member.name}
+                  </h3>
+                  <p className="text-blue-600 font-semibold mb-2 transition-colors duration-300 group-hover:text-purple-600">
+                    {member.role}
+                  </p>
+                  <p className="text-gray-600 text-sm transition-colors duration-300 group-hover:text-gray-700">
+                    {member.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -286,9 +212,6 @@ const LandingPage = ({ onLogin }) => {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16 relative overflow-hidden">
-        {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 animate-gradient-x opacity-50"></div>
-        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8 relative z-10">
             <div className="animate-fade-in-up">
@@ -302,7 +225,7 @@ const LandingPage = ({ onLogin }) => {
                 Transforming education through intelligent quiz management and analytics.
               </p>
             </div>
-            
+
             <div className="animate-fade-in-up animation-delay-200">
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
@@ -312,7 +235,7 @@ const LandingPage = ({ onLogin }) => {
                 <li><a href="#" className="text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1">Support</a></li>
               </ul>
             </div>
-            
+
             <div className="animate-fade-in-up animation-delay-400">
               <h4 className="text-lg font-semibold mb-4">Legal</h4>
               <ul className="space-y-2">
@@ -321,7 +244,7 @@ const LandingPage = ({ onLogin }) => {
                 <li><a href="#" className="text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1">Cookie Policy</a></li>
               </ul>
             </div>
-            
+
             <div className="animate-fade-in-up animation-delay-600">
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <div className="space-y-2">
@@ -340,7 +263,7 @@ const LandingPage = ({ onLogin }) => {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center relative z-10 animate-fade-in-up animation-delay-800">
             <p className="text-gray-400 text-sm">
               © 2025 QuizMaster. All rights reserved.
