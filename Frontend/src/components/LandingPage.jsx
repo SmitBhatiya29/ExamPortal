@@ -250,7 +250,7 @@ const LandingPage = ({ onLogin }) => {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300 group">
                   <Mail className="w-4 h-4" />
-                  <span>info@quizmaster.com</span>
+                  <span>bhatiyasmit2004@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300 group">
                   <Phone className="w-4 h-4" />
