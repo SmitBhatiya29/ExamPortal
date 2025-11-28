@@ -168,7 +168,8 @@ const LandingPage = ({ onLogin }) => {
         </div>
       </section>
 
-      {/* Developed By Section */}
+            {/* Developed By Section */}
+      {/*
       <section className="py-20 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
@@ -185,14 +186,12 @@ const LandingPage = ({ onLogin }) => {
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 flex items-center gap-6 border border-gray-100 group hover:-translate-y-2 animate-fade-in-up w-full md:w-2/3"
                 style={{ animationDelay: `${index * 150}ms ` }}
               >
-                {/* Image */}
                 <img
                   src={member.image}
                   alt={member.name}
                   className="w-28 h-28 rounded-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
                 />
 
-                {/* Info */}
                 <div className="text-left">
                   <h3 className="text-2xl font-bold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-600">
                     {member.name}
@@ -209,6 +208,8 @@ const LandingPage = ({ onLogin }) => {
           </div>
         </div>
       </section>
+      */}
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16 relative overflow-hidden">
